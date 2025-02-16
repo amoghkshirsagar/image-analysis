@@ -11,5 +11,4 @@ def buildAppUi():
     app.rowconfigure(0, weight=1)
 
     addAppContent(app)
-
     app.mainloop()

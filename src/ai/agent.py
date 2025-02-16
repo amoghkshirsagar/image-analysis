@@ -12,6 +12,12 @@ class Agent():
     def get_model(self):
         return self.model
     
-    def getResponse(self, prompt, image):
+    def sendCommandAndGetResponse(self, command, image):
+        prompt = f"""Given image, analyze and answer the following question:
+    {command}
+
+    Answer only question in short, clear and concise.
+    Do not include any additional information.
+    """
         response = promptHandle(prompt, self.model, image)
         return response

@@ -2,7 +2,7 @@ import customtkinter as ctk
 import tkinter as tk
 from customtkinter import CTk, CTkFrame, CTkButton, CTkLabel, CTkScrollableFrame
 
-from src.ui.chatUi import chatUI
+from src.ui.chatUi import ChatApp
 
 def addAppContent(app: CTkFrame):
 
@@ -28,4 +28,4 @@ def addAppContent(app: CTkFrame):
     chatArea.rowconfigure(6, weight=1)
     chatArea.columnconfigure(1, weight=1)
 
-    chatUI(chatArea)
+    ChatApp(chatArea)
